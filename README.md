@@ -1,3 +1,4 @@
+```markdown
 # sis2-protocol
 
 Сравнение gRPC (HTTP/2 + Protobuf) и REST (HTTP/1.1 + JSON) для внутреннего API сервиса коротких ссылок. 
@@ -22,7 +23,7 @@ graph TD
     style GrpcServer fill:#bbf,stroke:#333,stroke-width:1px
     style Domain fill:#bfb,stroke:#333,stroke-width:1px
     style Store fill:#fbb,stroke:#333,stroke-width:1px
-
+```
 
 ## 🔄 Флоу запроса (с Idempotency, Timeout и Retry)
 
@@ -109,3 +110,10 @@ sis2-protocol/
 ├── benchmark/     # Бенчмарки payload и latency
 └── gen/           # Сгенерированный код (не коммитится, в .gitignore)
 ```
+
+## 🤖 AI Usage
+Boilerplate gRPC/REST серверов сгенерирован с Copilot. Логика retry/backoff/jitter и idempotency-проверка написаны самостоятельно. Форматирование README и Mermaid-диаграммы — Copilot.
+```
+
+**Что было исправлено:**
+Добавлена закрывающая `` ``` `` после первой диаграммы `graph TD` (перед `## 🔄 Флоу запроса`). Без неё GitHub не понимал, где заканчивается код диаграммы.
