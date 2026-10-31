@@ -1,3 +1,5 @@
+# sis2-protocol
+
 Сравнение gRPC (HTTP/2 + Protobuf) и REST (HTTP/1.1 + JSON) для внутреннего API сервиса коротких ссылок. 
 Цель проекта — измерить разницу в latency (p50/p95/p99) и размере payload, а также продемонстрировать реализацию идемпотентности, таймаутов и ретраев.
 
@@ -19,5 +21,4 @@ graph TD
     style RestServer fill:#bbf,stroke:#333,stroke-width:1px
     style GrpcServer fill:#bbf,stroke:#333,stroke-width:1px
     style Domain fill:#bfb,stroke:#333,stroke-width:1px
-    style Store fill:#fbb,stroke:#333,stroke-width:1pxч
-
+    style Store fill:#fbb,stroke:#333,stroke-width:1px
