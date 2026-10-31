@@ -1,8 +1,3 @@
-Ошибка возникает из-за того, что в блоке `style` в конце строки случайно оказался символ `ч` (кириллица) или другой скрытый символ, который сломал парсер Mermaid.
-
-Вот **исправленный код** для README. Просто скопируй его заново — здесь я почистил `style` от лишних символов и упростил синтаксис, чтобы GitHub 100% отрендерил.
-
-```markdown
 # sis2-protocol
 
 Сравнение gRPC (HTTP/2 + Protobuf) и REST (HTTP/1.1 + JSON) для внутреннего API сервиса коротких ссылок. 
@@ -27,7 +22,7 @@ graph TD
     style GrpcServer fill:#bbf,stroke:#333,stroke-width:1px
     style Domain fill:#bfb,stroke:#333,stroke-width:1px
     style Store fill:#fbb,stroke:#333,stroke-width:1px
-```
+
 
 ## 🔄 Флоу запроса (с Idempotency, Timeout и Retry)
 
