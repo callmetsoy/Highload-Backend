@@ -109,10 +109,3 @@ sis2-protocol/
 ├── benchmark/     # Бенчмарки payload и latency
 └── gen/           # Сгенерированный код (не коммитится, в .gitignore)
 ```
-
-## 🤖 AI Usage
-Boilerplate gRPC/REST серверов сгенерирован с Copilot. Логика retry/backoff/jitter и idempotency-проверка написаны самостоятельно. Форматирование README и Mermaid-диаграммы — Copilot.
-```
-
-**Что было исправлено:**
-Добавлена закрывающая `` ``` `` после первой диаграммы `graph TD` (перед `## 🔄 Флоу запроса`). Без неё GitHub не понимал, где заканчивается код диаграммы.
