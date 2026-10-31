@@ -1,4 +1,3 @@
-```markdown
 # sis2-protocol
 
 Сравнение gRPC (HTTP/2 + Protobuf) и REST (HTTP/1.1 + JSON) для внутреннего API сервиса коротких ссылок. 
