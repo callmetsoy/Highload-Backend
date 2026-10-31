@@ -1,0 +1,21 @@
+git branch -M main# Сгенерированный код (генерируется через `make proto`)
+/gen/
+
+# Бинарники
+*.exe
+*.test
+*.out
+sis2
+rest
+grpc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Go
+vendor/

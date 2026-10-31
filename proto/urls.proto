@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package urls.v1;
+option go_package = "sis2/gen;gen";
+
+service UrlService {
+  rpc CreateShortUrl (CreateUrlRequest) returns (CreateUrlResponse);
+}
+
+message CreateUrlRequest {
+  string long_url        = 1;
+  string custom_alias    = 2;
+  string idempotency_key = 3;
+}
+
+message CreateUrlResponse {
+  string short_url  = 1;
+  string short_code = 2;
+}
